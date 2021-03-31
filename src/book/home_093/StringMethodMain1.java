@@ -73,23 +73,12 @@ public class StringMethodMain1 {
 		System.out.println();
 		
 		//12 String format
-		String ss = String.format("%s %d %c $f","hello",78,'c',8.6);
+		String ss = String.format("%s %d %c %f","hello",78,'c',8.6);
 		System.out.println(ss);
 		
 		//13 문자를 포함하는가?
 		System.out.println("Hello".contains("el"));
 		System.out.println("hello".indexOf("el")>0? true:false);
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 	}
 }
