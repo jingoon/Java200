@@ -8,7 +8,7 @@ public class Ant {
 		return name;
 	}
 	
-	public String toString() {
+	public String toString() {	// Ant의 부모(Object)의 메서드 재정의 : 오버라이딩
 		return "이름 :"+name;
 	}
 	
