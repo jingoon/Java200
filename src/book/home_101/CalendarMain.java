@@ -6,12 +6,14 @@ public class CalendarMain {
 		CalendarIn7 cal7 = new CalendarIn7();
 		int year = 2021;
 		for (int i=1;i<13;i++) {
-			System.out.printf("\t\t %d년 \t %d월 \n\n ", year, i);
+			System.out.printf("\t\t %d년 \t %d월 \n", year, i);
 			cal7.printCalendar(year, i);
 			System.out.println();
 			System.out.println();
 			
 		}
+		
+		cal7.toDayCalendar();
 	}
 
 }

@@ -122,6 +122,7 @@ public class CalendarIn7 {
 	public void printCalendar(int year, int month) {
 		int linecheck = 0;	// 날짜를 처음 찍는 위치를 지정하는 변수
 		String temp = "";	// 처음 문자 간격
+		System.out.println("");
 		System.out.println("Sun\tMon\tTue\tWed\tThu\tFri\tSat");
 		linecheck = startDayInCal(year, month); // 1일이 무슨 요일인가?
 		for(int j=0; j<linecheck; j++) {
@@ -131,8 +132,9 @@ public class CalendarIn7 {
 		
 		int count = getDates(year, month);	// 그 달에 몇 일이 있는가, 28,29,30,31?
 		for(int i=1; i<=count;i++) {
-			System.out.print(i+"\t");
+			System.out.print(i);
 			linecheck++;
+			System.out.print(linecheck != 7? "\t":"");
 			if(linecheck == 7) {		// 토요일
 				if(this.isLastDay(year, month, i)) {
 					return;	// 마지막 날이 끝나면 한줄 아래로 내릴 필요 없다.
