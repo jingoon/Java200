@@ -58,7 +58,7 @@ public class CalendarIn7 {
 	// 1~ year까지 윤년 횟수 구하기
 	public int howManyLeapYear(int year) {
 		int count =0;
-		for(int i=0; i<=year;i++) {
+		for(int i=1; i<=year;i++) {
 			if(leapYearTF(i)) {
 				count++;
 			}
@@ -90,8 +90,7 @@ public class CalendarIn7 {
 		int leapYear = howManyLeapYear(year-1);
 		int howManyDaysInYear = howManyDaysInYearsMonth(year, month, 1);// 첫날
 		count = ((leapYear)*2 +(year-1-leapYear)+howManyDaysInYear);
-		System.out.println(count%7+" 첫날");
-		return count%7;
+		return (count)%7;
 	}
 	
 	// 마지막날 
